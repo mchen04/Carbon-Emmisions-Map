@@ -2,7 +2,7 @@
 
 path {
     stroke: white;
-    fill:#9EB2B8 !important;
+    fill: #9EB2B8 !important;
 
     transition: fill .4s ease;
 }
@@ -37,4 +37,3 @@ path:hover {
 .h1 {
     font-family: 'Courier New', Courier, monospace;
 }
-
