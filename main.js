@@ -1,7 +1,8 @@
 var databaseIndices = {
     STATE_ABBREV: 0,
     STATE_NAME: 1,
-    INTENSITY: 3
+    INTENSITY: 3,
+    URL: 6
 };
 var stateArr = [];
 var isLoaded = false;
@@ -22,6 +23,7 @@ function change(stateID) {
         var color = colors[intensity - 1];
         //console.log(stateID, intensity, color);
         document.getElementById(stateID).style.setProperty("fill", color, "important");
+        //on click opens url 
     }
 }
 
@@ -34,4 +36,13 @@ function changeBack(stateID) {
 function getIntensity(stateID, stateArr) {
     var numString = stateArr.find(line => line[databaseIndices.STATE_ABBREV] === stateID)[databaseIndices.INTENSITY];
     return +numString;
+}
+
+function getURL(stateID, stateArr) {
+    var numString = stateArr.find(line => line[databaseIndices.STATE_ABBREV] === stateID)[databaseIndices.URL];
+    console.log(numString);
+    return numString;
+}
+function openURL(stateID) {
+    window.open(getURL(stateID, stateArr));
 }
