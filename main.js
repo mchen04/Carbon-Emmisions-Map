@@ -6,7 +6,7 @@ var databaseIndices = {
 var stateArr = [];
 var isLoaded = false;
 
-fetch("https://raw.githubusercontent.com/Nolancchu/Carbon-Emmisions-Map/main/data.txt").then(res => res.text()).then(text => {
+fetch("https://raw.githubusercontent.com/Nolancchu/Carbon-Emmisions-Map/main/data2.txt").then(res => res.text()).then(text => {
     var array = text.split("\n");
     for (var i = 0; i < array.length; i++) {
         array[i] = array[i].split(",");
