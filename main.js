@@ -11,7 +11,6 @@ fetch("https://raw.githubusercontent.com/Nolancchu/Carbon-Emmisions-Map/main/upd
     for (var i = 0; i < array.length; i++) {
         array[i] = array[i].split(",");
     }
-    console.log(array);
     stateArr = array;
     isLoaded = true;
 });
@@ -21,7 +20,7 @@ function change(stateID) {
         var intensity = getIntensity(stateID, stateArr);
         var colors = ["#ffcbcb", "#fc7676", "#ff2400", "#960018", "#722f37"];
         var color = colors[intensity - 1];
-        console.log(stateID, intensity, color);
+        //console.log(stateID, intensity, color);
         document.getElementById(stateID).style.setProperty("fill", color, "important");
     }
 }
