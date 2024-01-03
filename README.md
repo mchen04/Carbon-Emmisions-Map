@@ -14,9 +14,9 @@ This web dashboard provides an interactive view of carbon emissions for each sta
 
 ## Project Creators
 This project was collaboratively developed by a team of dedicated individuals:
-- sshakya03
-- MrFrooty
-- Nolancchu
+- Sazen Shakya (sshakya03)
+- Freddy Song (MrFrooty)
+- Nolan Chu (Nolancchu)
 
 ### Video Demo:
 [![Carbon Emissions Dashboard Demo](https://img.youtube.com/vi/osbiSP4x4OE/0.jpg)](https://youtu.be/osbiSP4x4OE "Carbon Emissions Dashboard Demo")
